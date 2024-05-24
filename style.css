@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: rgb(255, 0, 119);
+    font-family: "Jost", sans-serif;
+}
+nav{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    color:white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    margin-left: -20px;
+    justify-content: space-between;
+    display: inline-flex;
+}
+nav li{
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.nav ul li a{
+    color: white;
+}
+.logo{
+    color: white;
+    font-size: 50px;
+}
+.spisok{
+    color: white;
+    font-size: 20px;
+}
+section{
+    padding: 70px 17%;
+}
+.home{
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.site{
+    color: brown;
+    font-weight: bold;
+    font-size: 30px;
+}
+.onas{
+    width: 100%;
+    min-height: 80vh;
+    align-items: center;
+}
+.onast h1{
+    color: white;
+    font-size: 50px;
+}
+.onast p{
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+}
+.catalog{
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 120vh;
+}
+.head h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.card-container {
+    width: 500px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.card {
+    margin-top: 50px;
+    background-color: white;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.button {
+    background-color: #000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #333;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Show the cards when the corresponding radio button is checked */
+#card1-radio:checked ~ #card1,
+#card2-radio:checked ~ #card2,
+#card3-radio:checked ~ #card3,
+#card4-radio:checked ~ #card4 {
+    display: block;
+}
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 90vh;
+}
+
+.testimonials h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.testimonial {
+    display: inline-block;
+    width: 30%;
+    margin: 20px 1%;
+    vertical-align: top;
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.client-info p {
+    margin: 0;
+    font-weight: bold;
+}
+.contact{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 120vh;
+}
+.contact h1{
+    font-size: 50px;
+    color: white;
+
+}
+input[type="tel"], input[type="email"] {
+    width: 300px; /* Устанавливает ширину поля ввода */
+    height: 40px; /* Устанавливает высоту поля ввода */
+    font-size: 16px; /* Устанавливает размер шрифта */
+    padding: 10px; /* Добавляет внутренние отступы */
+}
+.contact h2{
+    color: rgb(199, 199, 199);
+}
+footer {
+    color: white;
+    background-color: #3a0e0e;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container2 {
+    max-width: 1200px;
+    height: 40vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.company-info, .contact-info {
+    margin-bottom: 10px;
+}
+
+.privacy-policy {
+    margin-top: 10px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.button {
+    border: 2px solid #000;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #000;
+}
